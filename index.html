@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Tailwind Css</title>
+</head>
+
+<body>
+    <nav class="container mx-auto p-4">
+        <div class="flex items-center justify-between">
+            <div>
+                <img src="./dist/images/preview.jpg" alt="tailwind logo" width="100px">
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#" class="text-slate-900 hover:text-slate-300">Portfolio</a>
+                <a href="#" class="text-slate-900 hover:text-slate-300">About</a>
+                <a href = "mailto: habonbahmadi@gmail.com" class="text-slate-900 hover:text-slate-300">Contact</a>
+                <a href="#" class="text-slate-900 hover:text-slate-300">Socail</a>
+                <a href = "mailto: habonbahmadi@gmail.com" class="py-2 px-6 rounded-full text-white bg-blue-500 hover:bg-slate-900">Call Me</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden">
+                <i class="ri-menu-line text-2xl"></i>
+            </button>
+        </div>
+        <div class="md:hidden">
+            <div id="mobile-menu"
+                class="absolute flex hidden flex-col items-center space-y-4 font-bold justify-between bg-gray-50 py-8 left-6 right-8 drop-shadow-lg border border-gray-300 ">
+                <a href="#" class="hover:text-slate-400">Portfolio</a>
+                <a href="#" class="hover:text-slate-400">About</a>
+                <a href = "mailto: habonbahmadi@gmail.com" class="hover:text-slate-400">Contact</a>
+                <a href="#" class="hover:text-slate-400">Socail</a>
+                <a href="#" class="py-2 px-6 rounded-full text-white bg-blue-500 hover:bg-slate-900">Call Me</a>
+            </div>
+        </div>
+    </nav>
+    <section id="hero">
+        <div class="container mx-auto px-6 space-x-6 flex flex-col-reverse md:flex-row ">
+            <div class="md:w-1/2 flex flex-col space-y-5 justify-center py-8 text-center md:text-left text-slate-900">
+                <h1 class="font-bold text-3xl md:text-5xl">Design websites seamlessly using web-based tools without any
+                    interruptions.
+                </h1>
+                <p>React is a cutting-edge library for building dynamic user interfaces in JavaScript applications, streamlining development with its component-based architecture and minimizing the necessity for repetitive code.
+                </p>
+                <a href = "mailto: habonbahmadi@gmail.com"
+                    class="py-2 px-6 rounded-full self-center  md:self-start text-white bg-blue-500 hover:bg-slate-900">Call
+                    Me</a>
+            </div>
+            <div class="w-1/2 self-center">
+                <img src="./dist/images/hero2.svg" alt="Tailwind Hero">
+            </div>
+        </div>
+    </section>
+    <section id="author">
+        <div class="container mx-auto py-32 text-center px-5">
+            <h2 class="font-bold text-4xl">Be yourself; everyone else is already taken!</h2>
+            <p class="mt-8 max-w-5xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas eum totam qui
+                vitae ab voluptatem est id autem facilis libero. Optio nulla numquam, illo soluta cum veritatis id
+                aliquam temporibus.</p>
+            <div class="mt-10 flex flex-col space-x-0 space-y-5  md:flex-row md:space-x-5 md:space-y-0">
+                <div
+                    class=" md:w-1/3 items-center flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 bg-slate-100">
+                    <img src="./dist/images/abdelkabir.jpeg" alt="adam" class="w-16 rounded-lg -mt-12">
+                    <h5 class="font-bold text-lg text-slate-900">Abdelkabir EL BAHMADI</h5>
+                    <p class="leading-5 text-sm">Crafting exceptional web experiences demands a keen eye for detail, a
+                        mastery of design principles, and an innate ability to blend form and function seamlessly.</p>
+                </div>
+                <div
+                    class=" md:w-1/3 items-center flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 bg-slate-100">
+                    <img src="./dist/images/abdelkabir.jpeg" alt="adam" class="w-16 rounded-lg -mt-12">
+                    <h5 class="font-bold text-lg text-slate-900">Abdelkabir EL BAHMADI</h5>
+                    <p class="leading-5 text-sm">Thrive as a web developer, utilizing your coding prowess to create
+                        cutting-edge online solutions that cater to user needs and business goals.</p>
+                </div>
+                <div
+                    class=" md:w-1/3 items-center flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 bg-slate-100">
+                    <img src="./dist/images/abdelkabir.jpeg" alt="adam" class="w-16 rounded-lg -mt-12">
+                    <h5 class="font-bold text-lg text-slate-900">Abdelkabir EL BAHMADI</h5>
+                    <p class="leading-5 text-sm">Flourish in the domain of software engineering, leveraging your coding
+                        expertise to engineer sophisticated software solutions that align with user requirements and
+                        organizational objectives.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="bg-slate-900">
+        <div
+            class="container mx-auto px-5 text-white py-10  space-y-8 flex flex-col-reverse justify-between  md:flex-row md:space-y-0 ">
+            <div class="flex flex-col items-center justify-between space-y-10 md:space-y-2 md:items-start">
+                <div class="text-center md:hidden">
+                    Copyright © 2023 Morocco®. All rights reserved.
+                </div>
+                <div>
+                    <img src="./dist/images/preview.jpg" alt="logo" class="h-14">
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://shorturl.at/cgjPR" target="blank"><i class="ri-facebook-box-fill text-3xl"></i></a>
+                    <a href="https://shorturl.at/knu36" target="blank"><i class="ri-instagram-fill text-3xl"></i></a>
+                    <a href="https://shorturl.at/bny26" target="blank"><i class="ri-linkedin-fill text-3xl"></i></a>
+                    <a href = "mailto: habonbahmadi@gmail.com"><i class="ri-mail-fill text-3xl"></i></a>
+                </div>
+            </div>
+            <div class="flex justify-around space-x-32">
+                <div class="flex flex-col space-y-2">
+                    <a href="#" class="hover:text-slate-300 font-bold">Home</a>
+                    <a href="#" class="hover:text-slate-300 font-bold">About</a>
+                    <a href="#" class="hover:text-slate-300 font-bold">Contact</a>
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <a href="#" class="hover:text-slate-300 font-bold">Imprint</a>
+                    <a href="#" class="hover:text-slate-300 font-bold">Privacy</a>
+                    <a href="#" class="hover:text-slate-300 font-bold">Credits</a>
+                </div>
+            </div>
+            <div class="flex flex-col justify-between">
+                <form action="#">
+                    <div class="flex">
+                        <input type="text" class="flex-1 py-2 px-6 rounded-full text-black" name=""
+                            placeholder="Subscribe To News Letter">
+                        <button type="button"
+                            class="bg-blue-500 hover:bg-slate-600 rounded-full px-6 py-2 ">Go</button>
+                    </div>
+                </form>
+                <div class="hidden md:block">
+                    Copyright © 2023 Morocco®. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./dist/js/script.js"></script>
+</body>
+
+</html>
